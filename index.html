@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -112,23 +114,38 @@
         <div class="features__grid">
           <div class="features__card">
             <figure>
-              <img src="./assets/grid-vector1.svg" alt="" />
+              <img
+                width="68"
+                height="59"
+                src="./assets/grid-vector1.svg"
+                alt="icon"
+              />
             </figure>
-            <h3>Peace of Mind</h3>
+            <p>Peace of Mind</p>
             <p>So it really behaves like neither. Now we have given up.</p>
           </div>
           <div class="features__card">
             <figure>
-              <img src="./assets/grid-vector2.svg" alt="" />
+              <img
+                width="37"
+                height="52"
+                src="./assets/grid-vector2.svg"
+                alt="icon"
+              />
             </figure>
-            <h3>Set For Life</h3>
+            <p>Set For Life</p>
             <p>They were used to create the machines that launched</p>
           </div>
           <div class="features__card">
             <figure>
-              <img src="./assets/grid-vector3.svg" alt="" />
+              <img
+                width="73"
+                height="56"
+                src="./assets/grid-vector3.svg"
+                alt="icon"
+              />
             </figure>
-            <h3>100% Satisfaction</h3>
+            <p>100% Satisfaction</p>
             <p>So it really behaves like neither. Now we have given up.</p>
           </div>
         </div>
@@ -150,18 +167,45 @@
               <figure>
                 <img
                   src="./assets/testimonial-avatar1.webp"
-                  alt="Testimonal image"
+                  alt="Testimonal person image"
+                  width="72"
+                  height="72"
                 />
               </figure>
             </div>
-            <h3>Regina Miles</h3>
-            <h4>Design</h4>
+            <p class="testimonial-name">Regina Miles</p>
+            <p class="testimonial-role">Design</p>
             <div class="stars">
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector-alt.svg" alt="" />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector-alt.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
             </div>
             <p>
               This proved to be impossible using the traditional concepts of
@@ -177,18 +221,45 @@
               <figure>
                 <img
                   src="./assets/testimonial-avatar2.webp"
-                  alt="Testimonal image"
+                  alt="Testimonal person image"
+                  width="72"
+                  height="72"
                 />
               </figure>
             </div>
-            <h3>Regina Miles</h3>
-            <h4>Design</h4>
+            <p class="testimonial-name">Regina Miles</p>
+            <p class="testimonial-role">Design</p>
             <div class="stars">
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector.svg" alt="" />
-              <img src="./assets/star-vector-alt.svg" alt="" />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
+              <img
+                src="./assets/star-vector-alt.svg"
+                alt="star"
+                width="19"
+                height="20"
+              />
             </div>
             <p>
               This proved to be impossible using the traditional concepts of
@@ -211,43 +282,42 @@
           of Classical physics: Newtonian mechanics
         </p>
         <div class="content__cards">
-          <div class="content__card">
-            <div class="content__card__img">
-              <img src="assets/content-card-1.webp" alt="" />
-            </div>
-            <div class="content__card__body">
-              <h6>Tax Management</h6>
-              <h3>Life Tips From Top Ten Adventure Travelers</h3>
+          <div class="card">
+            <div class="card__body">
+              <p class="card__title">Tax Management</p>
+              <p class="card__description">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
               <button>View Project</button>
             </div>
           </div>
-          <div class="content__card">
-            <div class="content__card__img">
-              <img src="assets/content-card-2.webp" alt="" />
-            </div>
-            <div class="content__card__body">
-              <h6>Tax Management</h6>
-              <h3>Life Tips From Top Ten Adventure Travelers</h3>
+
+          <div class="card">
+            <div class="card__body">
+              <p class="card__title">Tax Management</p>
+              <p class="card__description">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
               <button>View Project</button>
             </div>
           </div>
-          <div class="content__card">
-            <div class="content__card__img">
-              <img src="assets/content-card-3.webp" alt="" />
-            </div>
-            <div class="content__card__body">
-              <h6>Tax Management</h6>
-              <h3>Life Tips From Top Ten Adventure Travelers</h3>
+
+          <div class="card">
+            <div class="card__body">
+              <p class="card__title">Tax Management</p>
+              <p class="card__description">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
               <button>View Project</button>
             </div>
           </div>
-          <div class="content__card">
-            <div class="content__card__img">
-              <img src="assets/content-card-4.webp" alt="" />
-            </div>
-            <div class="content__card__body">
-              <h6>Tax Management</h6>
-              <h3>Life Tips From Top Ten Adventure Travelers</h3>
+
+          <div class="card">
+            <div class="card__body">
+              <p class="card__title">Tax Management</p>
+              <p class="card__description">
+                Life Tips From Top Ten Adventure Travelers
+              </p>
               <button>View Project</button>
             </div>
           </div>
@@ -307,23 +377,58 @@
               <button>Try for free</button>
               <ul>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="unchecked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   1GB Cloud Storage
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="unchecked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Email and community support
                 </li>
               </ul>
@@ -339,23 +444,58 @@
               <button>Try for free</button>
               <ul>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="checked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Unlimited product updates
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="unchecked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   1GB Cloud Storage
                 </li>
                 <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
+                  <i>
+                    <img
+                      src="assets/check-icon.svg"
+                      alt="unchecked icon"
+                      width="32"
+                      height="32"
+                    />
+                  </i>
                   Email and community support
                 </li>
               </ul>

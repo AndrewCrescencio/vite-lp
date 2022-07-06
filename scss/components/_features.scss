@@ -19,7 +19,7 @@
       flex-direction: column;
       align-items: center;
 
-      h3 {
+      p:first-of-type {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
@@ -30,7 +30,7 @@
         color: $light-text-color;
         margin-top: 30px;
       }
-      p {
+      p:last-of-type {
         max-width: 237px;
         font-family: "Montserrat";
         font-style: normal;

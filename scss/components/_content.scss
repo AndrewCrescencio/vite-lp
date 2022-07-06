@@ -1,6 +1,7 @@
 .content {
   color: $light-text-color;
   padding: 75px 0 97px;
+  font-family: "Montserrat";
   .container {
     padding: 0 17px;
     @media (min-width: 768px) {
@@ -11,7 +12,6 @@
     margin: 0 auto;
 
     h2 {
-      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -21,7 +21,6 @@
       margin-bottom: 30px;
     }
     p {
-      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -44,38 +43,53 @@
         margin-top: 96px;
       }
       justify-content: center;
-      .content__card {
+      .card {
         width: 100%;
         height: 452px;
         position: relative;
+        box-shadow: inset 100vw 100vh rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        &:first-of-type {
+          background-image: url("../assets/content-card-1.webp");
+        }
+        &:nth-child(2) {
+          background-image: url("../assets/content-card-2.webp");
+        }
+        &:nth-child(3) {
+          background-image: url("../assets/content-card-3.webp");
+        }
+        &:last-of-type {
+          background-image: url("../assets/content-card-4.webp");
+        }
         &__img {
           width: 100%;
           height: 100%;
+          filter: grayscale(50%);
           img {
             width: 100%;
             height: 100%;
           }
         }
         &__body {
-          z-index: 4;
           position: absolute;
           bottom: 31px;
           left: 27px;
+
           @media (min-width: 1280px) {
             bottom: 18px;
             left: 20px;
           }
-          h6 {
-            font-family: "Montserrat";
+          p.card__title {
+            text-align: start;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.2px;
           }
-          h3 {
+          p.card__description {
+            text-align: start;
             margin-top: 15px;
-            font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -93,6 +107,9 @@
             border-radius: 37px;
             border: none;
             color: $light-text-color;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: "Montserrat";
           }
         }
       }
