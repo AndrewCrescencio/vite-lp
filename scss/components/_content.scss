@@ -1,7 +1,7 @@
 .content {
   color: $light-text-color;
   padding: 75px 0 97px;
-  font-family: "Montserrat";
+
   .container {
     padding: 0 17px;
     @media (min-width: 768px) {
@@ -109,7 +109,6 @@
             color: $light-text-color;
             cursor: pointer;
             font-weight: 700;
-            font-family: "Montserrat";
           }
         }
       }

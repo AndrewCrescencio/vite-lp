@@ -11,7 +11,7 @@
   }
   h2 {
     text-align: center;
-    font-family: "Montserrat";
+
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -22,7 +22,7 @@
   }
   p {
     text-align: center;
-    font-family: "Montserrat";
+
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -70,7 +70,6 @@
       }
 
       p.testimonial-name {
-        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -79,7 +78,6 @@
         color: $text-color;
       }
       p.testimonial-role {
-        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -93,7 +91,7 @@
       p {
         text-align: start;
         color: $second-text-color;
-        font-family: "Montserrat";
+
         font-style: normal;
         font-weight: 500;
         font-size: 14px;

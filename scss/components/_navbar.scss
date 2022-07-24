@@ -39,7 +39,6 @@
       align-items: center;
 
       .navbar__logo {
-        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -71,7 +70,6 @@
         gap: 21px;
       }
       li {
-        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
@@ -105,7 +103,6 @@
           }
         }
         @media (min-width: 768px) {
-          font-family: "Montserrat";
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
