@@ -1,770 +1,726 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="preload"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap css-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon"
+    type="image/svg+xml"
+    href="favicon.svg" />
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="preload"
+    as="style"
+    onload="this.rel='stylesheet'" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Tags  -->
-    <meta name="og:site_name" content="Landify | Landing Page" />
-    <meta name="og:type" content="website" />
-    <meta
-      property="og:image"
-      itemprop="image"
-      content="https://raw.githubusercontent.com/AndrewCrescencio/vite-lp/main/thumbnail.webp"
-    />
-    <meta
-      property="og:image:secure_url"
-      itemprop="image"
-      content="https://raw.githubusercontent.com/AndrewCrescencio/vite-lp/main/thumbnail.webp"
-    />
-    <meta property="og:image:type" content="image/jpeg" />
-    <!-- <meta property="og:image:width" content="400" />
+  <!-- Bootstrap css-->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous" />
+
+  <!-- SEO Tags  -->
+  <meta name="og:site_name"
+    content="Landify | Landing Page" />
+  <meta name="og:type"
+    content="website" />
+  <meta property="og:image"
+    itemprop="image"
+    content="https://raw.githubusercontent.com/AndrewCrescencio/vite-lp/main/thumbnail.webp" />
+  <meta property="og:image:secure_url"
+    itemprop="image"
+    content="https://raw.githubusercontent.com/AndrewCrescencio/vite-lp/main/thumbnail.webp" />
+  <meta property="og:image:type"
+    content="image/jpeg" />
+  <!-- <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="300" /> -->
-    <meta property="og:image:alt" content="Landing page preview" />
-    <meta name="og:title" content="Landify | Landing Page" />
-    <meta
-      name="og:description"
-      content="Landify Landing Page, página feita usando html/sass/js/bootstrap"
-    />
-    <meta
-      name="description"
-      content="Landing page made with HTML5 | JavaScript | Sass | Bootstrap, following figma design. Author: Andrew Crescencio"
-    />
-    <title>Landify Landing Page</title>
-    <!-- google verification -->
-    <meta
-      name="google-site-verification"
-      content="BC9zgIwnk6GXGhf3Bk1jdrLOykSf17-Gegxkic_fxxg"
-    />
-  </head>
+  <meta property="og:image:alt"
+    content="Landing page preview" />
+  <meta name="og:title"
+    content="Landify | Landing Page" />
+  <meta name="og:description"
+    content="Landify Landing Page, página feita usando html/sass/js/bootstrap" />
+  <meta name="description"
+    content="Landing page made with HTML5 | JavaScript | Sass | Bootstrap, following figma design. Author: Andrew Crescencio" />
+  <title>Landify Landing Page</title>
+  <!-- google verification -->
+  <meta name="google-site-verification"
+    content="BC9zgIwnk6GXGhf3Bk1jdrLOykSf17-Gegxkic_fxxg" />
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <div class="navbar-wrapper" id="navbar">
-      <nav class="navbar">
-        <div class="navbar__header">
-          <div class="navbar__logo">BrandName</div>
-          <div class="navbar__menu-btn" id="navbar-btn">
-            <button id="hamburger" aria-label="hamburguer button">
-              <span></span>
-              <span></span>
-              <span></span>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-wrapper"
+    id="navbar">
+    <nav class="navbar">
+      <div class="navbar__header">
+        <div class="navbar__logo">BrandName</div>
+        <div class="navbar__menu-btn"
+          id="navbar-btn">
+          <button id="hamburger"
+            aria-label="hamburguer button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <ul class="navbar__links"
+        id="navbar-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Product</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero"
+    id="hero">
+    <div class="container element-animate"
+      data-animate-effect="fadeInUp">
+      <div class="hero__content">
+        <h1>We Ensure A Best Insurance Service</h1>
+        <h2>
+          We know how large objects will act, but things on a small scale.
+        </h2>
+
+        <div class="hero__buttons">
+          <button>Get Quote Now</button>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section-->
+  <section class="features element-animate"
+    id="features">
+    <div class="container">
+      <div class="features__grid">
+        <div class="features__card">
+          <figure>
+            <img width="68"
+              height="59"
+              src="./assets/grid-vector1.svg"
+              alt="icon" />
+          </figure>
+          <p>Peace of Mind</p>
+          <p>So it really behaves like neither. Now we have given up.</p>
+        </div>
+        <div class="features__card">
+          <figure>
+            <img width="37"
+              height="52"
+              src="./assets/grid-vector2.svg"
+              alt="icon" />
+          </figure>
+          <p>Set For Life</p>
+          <p>They were used to create the machines that launched</p>
+        </div>
+        <div class="features__card">
+          <figure>
+            <img width="73"
+              height="56"
+              src="./assets/grid-vector3.svg"
+              alt="icon" />
+          </figure>
+          <p>100% Satisfaction</p>
+          <p>So it really behaves like neither. Now we have given up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section-->
+  <section class="testimonials element-animate"
+    id="testimonials">
+    <div class="container">
+      <h2>Industry</h2>
+      <p>
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+      <div class="testimonial__cards">
+        <!-- Testimonal Card -->
+        <div class="testimonial__card">
+          <div class="testimonial__avatar">
+            <figure>
+              <img src="./assets/testimonial-avatar1.webp"
+                alt="Testimonal person image"
+                width="72"
+                height="72" />
+            </figure>
+          </div>
+          <p class="testimonial-name">Regina Miles</p>
+          <p class="testimonial-role">Design</p>
+          <div class="stars">
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector-alt.svg"
+              alt="star"
+              width="19"
+              height="20" />
+          </div>
+          <p>
+            This proved to be impossible using the traditional concepts of
+            space and time. Einstein developed a new view of time first and
+            then space. This proved to be impossible using the traditional
+            concepts of space and time. Einstein developed a new view of time
+            first and then space.
+          </p>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="testimonial__avatar">
+            <figure>
+              <img src="./assets/testimonial-avatar2.webp"
+                alt="Testimonal person image"
+                width="72"
+                height="72" />
+            </figure>
+          </div>
+          <p class="testimonial-name">Regina Miles</p>
+          <p class="testimonial-role">Design</p>
+          <div class="stars">
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector.svg"
+              alt="star"
+              width="19"
+              height="20" />
+            <img src="./assets/star-vector-alt.svg"
+              alt="star"
+              width="19"
+              height="20" />
+          </div>
+          <p>
+            This proved to be impossible using the traditional concepts of
+            space and time. Einstein developed a new view of time first and
+            then space. This proved to be impossible using the traditional
+            concepts of space and time. Einstein developed a new view of time
+            first and then space.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section-->
+  <section class="content element-animate"
+    id="content">
+    <div class="container">
+      <h2>Industry</h2>
+      <p>
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+      <div class="content__cards">
+        <div class="card">
+          <div class="card__body">
+            <p class="card__title">Tax Management</p>
+            <p class="card__description">
+              Life Tips From Top Ten Adventure Travelers
+            </p>
+            <button>View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <p class="card__title">Tax Management</p>
+            <p class="card__description">
+              Life Tips From Top Ten Adventure Travelers
+            </p>
+            <button>View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <p class="card__title">Tax Management</p>
+            <p class="card__description">
+              Life Tips From Top Ten Adventure Travelers
+            </p>
+            <button>View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__body">
+            <p class="card__title">Tax Management</p>
+            <p class="card__description">
+              Life Tips From Top Ten Adventure Travelers
+            </p>
+            <button>View Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section-->
+  <section class="pricing element-animate"
+    id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p>
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+
+      <div class="pricing__cards">
+        <!-- card -->
+        <div class="pricing__card">
+          <h3>Free</h3>
+          <h5>Organize across all apps by hand</h5>
+          <div class="pricing__card__body">
+            <h2>0$</h2>
+            <h5>Per Month</h5>
+            <button>Try for free</button>
+            <ul>
+              <li>
+                <i><img src="assets/check-icon.svg"
+                    alt="" /></i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i><img src="assets/check-icon.svg"
+                    alt="" /></i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i><img src="assets/check-icon.svg"
+                    alt="" /></i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i><img src="assets/check-icon.svg"
+                    alt="" /></i>
+                1GB Cloud Storage
+              </li>
+              <li>
+                <i><img src="assets/check-icon.svg"
+                    alt="" /></i>
+                Email and community support
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing__card">
+          <h3>Free</h3>
+          <h5>Organize across all apps by hand</h5>
+          <div class="pricing__card__body">
+            <h2>0$</h2>
+            <h5>Per Month</h5>
+            <button>Try for free</button>
+            <ul>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="unchecked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                1GB Cloud Storage
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="unchecked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Email and community support
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing__card">
+          <h3>Free</h3>
+          <h5>Organize across all apps by hand</h5>
+          <div class="pricing__card__body">
+            <h2>0$</h2>
+            <h5>Per Month</h5>
+            <button>Try for free</button>
+            <ul>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="checked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Unlimited product updates
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="unchecked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                1GB Cloud Storage
+              </li>
+              <li>
+                <i>
+                  <img src="assets/check-icon.svg"
+                    alt="unchecked icon"
+                    width="32"
+                    height="32" />
+                </i>
+                Email and community support
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section-->
+  <section class="contact"
+    id="contact">
+    <div class="container">
+      <!-- Contact Section DESKTOP -->
+      <div class="contact-desktop">
+        <h5>Contact Us</h5>
+        <h2>Make an Appointment</h2>
+        <!-- Contact Form Desktop -->
+        <form class="contact-desktop__form form"
+          id="form">
+          <div class="form-row">
+            <div class="col-auto">
+              <input type="text"
+                class="form-control"
+                placeholder="Full Name*"
+                id="name" />
+            </div>
+            <div class="col-auto">
+              <input class="form-control mask"
+                data-mask="cpf"
+                type="email"
+                placeholder="Email*" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-auto">
+              <select class="custom-select"
+                id="select"
+                name="select">
+                <option selected>Please Select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <select class="custom-select"
+                id="select2"
+                name="select2">
+                <option value="1">O1:00 Available</option>
+                <option value="2">O2:00 Available</option>
+                <option value="3">O3:00 Available</option>
+                <option value="4"
+                  selected>O4:00 Available</option>
+                <option value="5">O5:00 Available</option>
+                <option value="6">O6:00 Available</option>
+                <option value="7">O7:00 Available</option>
+                <option value="8">O8:00 Available</option>
+                <option value="9">O9:00 Available</option>
+                <option value="10">10:00 Available</option>
+                <option value="11">11:00 Available</option>
+                <option value="12">12:00 Available</option>
+                <option value="13">13:00 Available</option>
+                <option value="14">14:00 Available</option>
+                <option value="15">15:00 Available</option>
+                <option value="16">16:00 Available</option>
+                <option value="17">17:00 Available</option>
+                <option value="18">18:00 Available</option>
+                <option value="19">19:00 Available</option>
+                <option value="20">20:00 Available</option>
+                <option value="21">21:00 Available</option>
+                <option value="22">22:00 Available</option>
+                <option value="23">23:00 Available</option>
+                <option value="24">00:00 Available</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <textarea class="form-control"
+              id="textarea"
+              rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <button class="form-desktop__button"
+              type="submit">
+              Book Appointment
             </button>
           </div>
-        </div>
-        <ul class="navbar__links" id="navbar-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">Product</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="navbar__buttons">
-          <a href="#">Login</a>
-          <button>
-            Become a member
-            <i><img src="./assets/right-arrow.svg" alt="Arrow" /></i>
-          </button>
-        </div>
-      </nav>
-    </div>
-
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="container element-animate" data-animate-effect="fadeInUp">
-        <div class="hero__content">
-          <h1>We Ensure A Best Insurance Service</h1>
-          <h2>
-            We know how large objects will act, but things on a small scale.
-          </h2>
-
-          <div class="hero__buttons">
-            <button>Get Quote Now</button>
-            <button>Learn More</button>
-          </div>
-        </div>
+        </form>
       </div>
-    </section>
+      <!-- Contact MOBILE -->
+      <div class="contact-mobile">
+        <h3>Consulting Agency For Your Business</h3>
+        <p>the quick fox jumps over the lazy dog</p>
+        <button class="contact-mobile__button"
+          data-toggle="modal"
+          data-target="#small-form">
+          Contact Us
+        </button>
 
-    <!-- Features Section-->
-    <section class="features element-animate" id="features">
-      <div class="container">
-        <div class="features__grid">
-          <div class="features__card">
-            <figure>
-              <img
-                width="68"
-                height="59"
-                src="./assets/grid-vector1.svg"
-                alt="icon"
-              />
-            </figure>
-            <p>Peace of Mind</p>
-            <p>So it really behaves like neither. Now we have given up.</p>
-          </div>
-          <div class="features__card">
-            <figure>
-              <img
-                width="37"
-                height="52"
-                src="./assets/grid-vector2.svg"
-                alt="icon"
-              />
-            </figure>
-            <p>Set For Life</p>
-            <p>They were used to create the machines that launched</p>
-          </div>
-          <div class="features__card">
-            <figure>
-              <img
-                width="73"
-                height="56"
-                src="./assets/grid-vector3.svg"
-                alt="icon"
-              />
-            </figure>
-            <p>100% Satisfaction</p>
-            <p>So it really behaves like neither. Now we have given up.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section-->
-    <section class="testimonials element-animate" id="testimonials">
-      <div class="container">
-        <h2>Industry</h2>
-        <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
-        </p>
-        <div class="testimonial__cards">
-          <!-- Testimonal Card -->
-          <div class="testimonial__card">
-            <div class="testimonial__avatar">
-              <figure>
-                <img
-                  src="./assets/testimonial-avatar1.webp"
-                  alt="Testimonal person image"
-                  width="72"
-                  height="72"
-                />
-              </figure>
-            </div>
-            <p class="testimonial-name">Regina Miles</p>
-            <p class="testimonial-role">Design</p>
-            <div class="stars">
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector-alt.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-            </div>
-            <p>
-              This proved to be impossible using the traditional concepts of
-              space and time. Einstein developed a new view of time first and
-              then space. This proved to be impossible using the traditional
-              concepts of space and time. Einstein developed a new view of time
-              first and then space.
-            </p>
-          </div>
-
-          <div class="testimonial__card">
-            <div class="testimonial__avatar">
-              <figure>
-                <img
-                  src="./assets/testimonial-avatar2.webp"
-                  alt="Testimonal person image"
-                  width="72"
-                  height="72"
-                />
-              </figure>
-            </div>
-            <p class="testimonial-name">Regina Miles</p>
-            <p class="testimonial-role">Design</p>
-            <div class="stars">
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-              <img
-                src="./assets/star-vector-alt.svg"
-                alt="star"
-                width="19"
-                height="20"
-              />
-            </div>
-            <p>
-              This proved to be impossible using the traditional concepts of
-              space and time. Einstein developed a new view of time first and
-              then space. This proved to be impossible using the traditional
-              concepts of space and time. Einstein developed a new view of time
-              first and then space.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Content Section-->
-    <section class="content element-animate" id="content">
-      <div class="container">
-        <h2>Industry</h2>
-        <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
-        </p>
-        <div class="content__cards">
-          <div class="card">
-            <div class="card__body">
-              <p class="card__title">Tax Management</p>
-              <p class="card__description">
-                Life Tips From Top Ten Adventure Travelers
-              </p>
-              <button>View Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__body">
-              <p class="card__title">Tax Management</p>
-              <p class="card__description">
-                Life Tips From Top Ten Adventure Travelers
-              </p>
-              <button>View Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__body">
-              <p class="card__title">Tax Management</p>
-              <p class="card__description">
-                Life Tips From Top Ten Adventure Travelers
-              </p>
-              <button>View Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__body">
-              <p class="card__title">Tax Management</p>
-              <p class="card__description">
-                Life Tips From Top Ten Adventure Travelers
-              </p>
-              <button>View Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section-->
-    <section class="pricing element-animate" id="pricing">
-      <div class="container">
-        <h2>Pricing</h2>
-        <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
-        </p>
-
-        <div class="pricing__cards">
-          <!-- card -->
-          <div class="pricing__card">
-            <h3>Free</h3>
-            <h5>Organize across all apps by hand</h5>
-            <div class="pricing__card__body">
-              <h2>0$</h2>
-              <h5>Per Month</h5>
-              <button>Try for free</button>
-              <ul>
-                <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
-                  1GB Cloud Storage
-                </li>
-                <li>
-                  <i><img src="assets/check-icon.svg" alt="" /></i>
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="pricing__card">
-            <h3>Free</h3>
-            <h5>Organize across all apps by hand</h5>
-            <div class="pricing__card__body">
-              <h2>0$</h2>
-              <h5>Per Month</h5>
-              <button>Try for free</button>
-              <ul>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="unchecked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  1GB Cloud Storage
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="unchecked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="pricing__card">
-            <h3>Free</h3>
-            <h5>Organize across all apps by hand</h5>
-            <div class="pricing__card__body">
-              <h2>0$</h2>
-              <h5>Per Month</h5>
-              <button>Try for free</button>
-              <ul>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="checked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Unlimited product updates
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="unchecked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  1GB Cloud Storage
-                </li>
-                <li>
-                  <i>
-                    <img
-                      src="assets/check-icon.svg"
-                      alt="unchecked icon"
-                      width="32"
-                      height="32"
-                    />
-                  </i>
-                  Email and community support
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section-->
-    <section class="contact" id="contact">
-      <div class="container">
-        <!-- Contact Section DESKTOP -->
-        <div class="contact-desktop">
-          <h5>Contact Us</h5>
-          <h2>Make an Appointment</h2>
-          <!-- Contact Form Desktop -->
-          <form class="contact-desktop__form form" id="form">
-            <div class="form-row">
-              <div class="col-auto">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name*"
-                  id="name"
-                />
+        <!-- Contact MOBILE Form Modal -->
+        <div class="modal"
+          id="small-form">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- modal header -->
+              <div class="modal-header">
+                <button type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <div class="col-auto">
-                <input
-                  class="form-control mask"
-                  data-mask="cpf"
-                  type="email"
-                  placeholder="Email*"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-auto">
-                <select class="custom-select" id="select" name="select">
-                  <option selected>Please Select</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <div class="col-auto">
-                <select class="custom-select" id="select2" name="select2">
-                  <option value="1">O1:00 Available</option>
-                  <option value="2">O2:00 Available</option>
-                  <option value="3">O3:00 Available</option>
-                  <option value="4" selected>O4:00 Available</option>
-                  <option value="5">O5:00 Available</option>
-                  <option value="6">O6:00 Available</option>
-                  <option value="7">O7:00 Available</option>
-                  <option value="8">O8:00 Available</option>
-                  <option value="9">O9:00 Available</option>
-                  <option value="10">10:00 Available</option>
-                  <option value="11">11:00 Available</option>
-                  <option value="12">12:00 Available</option>
-                  <option value="13">13:00 Available</option>
-                  <option value="14">14:00 Available</option>
-                  <option value="15">15:00 Available</option>
-                  <option value="16">16:00 Available</option>
-                  <option value="17">17:00 Available</option>
-                  <option value="18">18:00 Available</option>
-                  <option value="19">19:00 Available</option>
-                  <option value="20">20:00 Available</option>
-                  <option value="21">21:00 Available</option>
-                  <option value="22">22:00 Available</option>
-                  <option value="23">23:00 Available</option>
-                  <option value="24">00:00 Available</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <textarea class="form-control" id="textarea" rows="3"></textarea>
-            </div>
-            <div class="form-row">
-              <button class="form-desktop__button" type="submit">
-                Book Appointment
-              </button>
-            </div>
-          </form>
-        </div>
-        <!-- Contact MOBILE -->
-        <div class="contact-mobile">
-          <h3>Consulting Agency For Your Business</h3>
-          <p>the quick fox jumps over the lazy dog</p>
-          <button
-            class="contact-mobile__button"
-            data-toggle="modal"
-            data-target="#small-form"
-          >
-            Contact Us
-          </button>
-
-          <!-- Contact MOBILE Form Modal -->
-          <div class="modal" id="small-form">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- modal header -->
-                <div class="modal-header">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
+              <!-- modal body -->
+              <div class="modal-body">
+                <form class="form-mobile">
+                  <p>Contact Us</p>
+                  <input type="text"
+                    class="form-control"
+                    placeholder="Full Name *"
+                    id="name" />
+                  <input class="form-control"
+                    type="email"
+                    placeholder="Email *" />
+                  <select class="custom-select"
+                    id="select"
+                    name="select">
+                    <option selected>Please Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="custom-select"
+                    id="select2"
+                    name="select2">
+                    <option value="1">O1:00 Available</option>
+                    <option value="2">O2:00 Available</option>
+                    <option value="3">O3:00 Available</option>
+                    <option value="4"
+                      selected>O4:00 Available</option>
+                    <option value="5">O5:00 Available</option>
+                    <option value="6">O6:00 Available</option>
+                    <option value="7">O7:00 Available</option>
+                    <option value="8">O8:00 Available</option>
+                    <option value="9">O9:00 Available</option>
+                    <option value="10">10:00 Available</option>
+                    <option value="11">11:00 Available</option>
+                    <option value="12">12:00 Available</option>
+                    <option value="13">13:00 Available</option>
+                    <option value="14">14:00 Available</option>
+                    <option value="15">15:00 Available</option>
+                    <option value="16">16:00 Available</option>
+                    <option value="17">17:00 Available</option>
+                    <option value="18">18:00 Available</option>
+                    <option value="19">19:00 Available</option>
+                    <option value="20">20:00 Available</option>
+                    <option value="21">21:00 Available</option>
+                    <option value="22">22:00 Available</option>
+                    <option value="23">23:00 Available</option>
+                    <option value="24">00:00 Available</option>
+                  </select>
+                  <textarea class="form-control"
+                    id="textarea"
+                    rows="3"></textarea>
+                  <button class="form-mobile__button"
+                    type="submit">
+                    Book Appointment
                   </button>
-                </div>
-                <!-- modal body -->
-                <div class="modal-body">
-                  <form class="form-mobile">
-                    <p>Contact Us</p>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Full Name *"
-                      id="name"
-                    />
-                    <input
-                      class="form-control"
-                      type="email"
-                      placeholder="Email *"
-                    />
-                    <select class="custom-select" id="select" name="select">
-                      <option selected>Please Select</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <select class="custom-select" id="select2" name="select2">
-                      <option value="1">O1:00 Available</option>
-                      <option value="2">O2:00 Available</option>
-                      <option value="3">O3:00 Available</option>
-                      <option value="4" selected>O4:00 Available</option>
-                      <option value="5">O5:00 Available</option>
-                      <option value="6">O6:00 Available</option>
-                      <option value="7">O7:00 Available</option>
-                      <option value="8">O8:00 Available</option>
-                      <option value="9">O9:00 Available</option>
-                      <option value="10">10:00 Available</option>
-                      <option value="11">11:00 Available</option>
-                      <option value="12">12:00 Available</option>
-                      <option value="13">13:00 Available</option>
-                      <option value="14">14:00 Available</option>
-                      <option value="15">15:00 Available</option>
-                      <option value="16">16:00 Available</option>
-                      <option value="17">17:00 Available</option>
-                      <option value="18">18:00 Available</option>
-                      <option value="19">19:00 Available</option>
-                      <option value="20">20:00 Available</option>
-                      <option value="21">21:00 Available</option>
-                      <option value="22">22:00 Available</option>
-                      <option value="23">23:00 Available</option>
-                      <option value="24">00:00 Available</option>
-                    </select>
-                    <textarea
-                      class="form-control"
-                      id="textarea"
-                      rows="3"
-                    ></textarea>
-                    <button class="form-mobile__button" type="submit">
-                      Book Appointment
-                    </button>
-                  </form>
-                </div>
-                <!--  -->
+                </form>
               </div>
+              <!--  -->
             </div>
           </div>
-          <!--  -->
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer element-animate">
+    <div class="footer__links container">
+      <ul>
+        <li>Company Info</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Carrier</a></li>
+        <li><a href="#">We are hiring</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul>
+        <li>Legal</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Carrier</a></li>
+        <li><a href="#">We are hiring</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul>
+        <li>Features</li>
+        <li><a href="#">Business Marketing</a></li>
+        <li><a href="#">User Analytic</a></li>
+        <li><a href="#">Live Chat</a></li>
+        <li><a href="#">Unlimited Support</a></li>
+      </ul>
+      <ul>
+        <li>Resources</li>
+        <li><a href="#">IOS & Android</a></li>
+        <li><a href="#">Watch a Demo</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+      <ul>
+        <li>Get In To uch</li>
+        <li>
+          <img src="assets/phone-icon-mobile.svg"
+            alt="" />
+
+          <a href="#">(480) 555-0103</a>
+        </li>
+        <li>
+          <img src="assets/local-icon-mobile.svg"
+            alt="" />
+          <a href="#">4517 Washington Ave.</a>
+        </li>
+        <li>
+          <img src="assets/email-icon-mobile.svg"
+            alt="" />
+          <a href="#">debra.holt@example.com</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="container">
+        <p>Made With Love By Figmaland All Right Reserved</p>
+        <div>
+          <a href="#">
+            <img src="./assets/facebook-icon-mobile.svg"
+              alt="facebook icon" />
+          </a>
+          <a href="#">
+            <img src="assets/instagram-icon-mobile.svg"
+              alt="instagram icon" />
+          </a>
+          <a href="#">
+            <img src="assets/twitter-icon-mobile.svg"
+              alt="twitter icon" />
+          </a>
+          <a href="#">
+            <img src="assets/youtube-icon-mobile.svg"
+              alt="youtube icon" />
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer element-animate">
-      <div class="footer__links container">
-        <ul>
-          <li>Company Info</li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Carrier</a></li>
-          <li><a href="#">We are hiring</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <ul>
-          <li>Legal</li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Carrier</a></li>
-          <li><a href="#">We are hiring</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <ul>
-          <li>Features</li>
-          <li><a href="#">Business Marketing</a></li>
-          <li><a href="#">User Analytic</a></li>
-          <li><a href="#">Live Chat</a></li>
-          <li><a href="#">Unlimited Support</a></li>
-        </ul>
-        <ul>
-          <li>Resources</li>
-          <li><a href="#">IOS & Android</a></li>
-          <li><a href="#">Watch a Demo</a></li>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">API</a></li>
-        </ul>
-        <ul>
-          <li>Get In To uch</li>
-          <li>
-            <img src="assets/phone-icon-mobile.svg" alt="" />
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
 
-            <a href="#">(480) 555-0103</a>
-          </li>
-          <li>
-            <img src="assets/local-icon-mobile.svg" alt="" />
-            <a href="#">4517 Washington Ave.</a>
-          </li>
-          <li>
-            <img src="assets/email-icon-mobile.svg" alt="" />
-            <a href="#">debra.holt@example.com</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div class="container">
-          <p>Made With Love By Figmaland All Right Reserved</p>
-          <div>
-            <a href="#">
-              <img
-                src="./assets/facebook-icon-mobile.svg"
-                alt="facebook icon"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="assets/instagram-icon-mobile.svg"
-                alt="instagram icon"
-              />
-            </a>
-            <a href="#">
-              <img src="assets/twitter-icon-mobile.svg" alt="twitter icon" />
-            </a>
-            <a href="#">
-              <img src="assets/youtube-icon-mobile.svg" alt="youtube icon" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <!-- Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
 
-    <!-- jQuery -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
 
-    <!-- Bootstrap js-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
+  <!-- scripts -->
+  <script type="module"
+    src="./js/app.js"></script>
+</body>
 
-    <!-- Waypoints -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- scripts -->
-    <script type="module" src="./js/app.js"></script>
-  </body>
 </html>
