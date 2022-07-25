@@ -48,6 +48,7 @@
         height: 452px;
         position: relative;
         box-shadow: inset 100vw 100vh rgba(0, 0, 0, 0.4);
+        border: none;
         overflow: hidden;
         &:first-of-type {
           background-image: url("../assets/content-card-1.webp");
@@ -100,7 +101,6 @@
           }
           button {
             margin-top: 15px;
-            padding: 10px 36px;
             width: 165px;
             height: 42px;
             background: $primary;
