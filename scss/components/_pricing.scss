@@ -45,7 +45,7 @@
       margin-bottom: 141px;
     }
   }
-  .pricing__card {
+  .card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,10 +56,8 @@
     border-radius: 10px;
     padding: 50px 39px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    h2 {
-      margin-bottom: 0;
-    }
-    h3 {
+
+    &__title {
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -70,11 +68,8 @@
       margin-bottom: 35px;
     }
 
-    h3 + h5 {
+    &__description {
       max-width: 160px;
-    }
-
-    h5 {
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
@@ -93,21 +88,9 @@
       letter-spacing: 0.2px;
       color: $primary;
     }
-    .pricing__card {
-      display: none;
-      @media (min-width: 769px) {
-        display: block;
-      }
-    }
 
-    .pricing__card {
-      button {
-        margin-bottom: 35px !important;
-      }
-    }
-
-    .pricing__card__body {
-      h2 {
+    &__body {
+      p:first-of-type {
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -116,13 +99,14 @@
         color: $primary;
       }
 
-      h5 {
+      p:nth-child(2) {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.1px;
         color: #8ec2f2;
+        margin-bottom: 35px;
       }
       ul {
         position: relative;
@@ -181,27 +165,28 @@
         }
       }
     }
-  }
-  .pricing__card:nth-child(even)::after {
-    content: "New";
-    background-color: $alert-color;
-    padding: 29px 17px;
-    position: absolute;
-    top: -26px;
-    right: 16px;
-    border-radius: 52px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: $white;
-  }
-  .pricing__card:nth-child(even) {
-    h3 {
-      text-transform: capitalize;
+    &:nth-child(even) {
+      .card__title {
+        text-transform: capitalize;
+      }
+      &::after {
+        content: "New";
+        background-color: $alert-color;
+        padding: 29px 17px;
+        position: absolute;
+        top: -26px;
+        right: 16px;
+        border-radius: 52px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $white;
+      }
     }
   }
 }
