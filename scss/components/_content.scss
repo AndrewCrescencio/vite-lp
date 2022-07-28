@@ -109,6 +109,10 @@
             color: $light-text-color;
             cursor: pointer;
             font-weight: 700;
+            transition: all 200ms ease-in-out;
+            &:hover {
+              background-color: $hover-color;
+            }
           }
         }
       }
