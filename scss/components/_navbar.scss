@@ -21,7 +21,7 @@
     margin: 0 auto;
     color: $light-text-color;
     padding: 23px 35px;
-
+    overflow: hidden;
     @media (min-width: 768px) {
       display: flex;
       align-items: center;
@@ -55,6 +55,7 @@
       }
     }
     ul.navbar__links.active {
+      height: 100vh;
       display: block;
       visibility: visible;
       opacity: 1;
