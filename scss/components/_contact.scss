@@ -78,6 +78,10 @@
         padding: 15px 40px;
         margin-top: 40px;
         margin-bottom: 40px;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          background-color: $hover-color;
+        }
       }
 
       textarea.form-control,
@@ -124,7 +128,7 @@
       margin-top: 50px;
       margin-bottom: 40px;
       border: none;
-      background: #23a6f0;
+      background: $primary;
       border-radius: 5px;
       padding: 15px 40px;
 
@@ -134,6 +138,10 @@
       text-align: center;
       letter-spacing: 0.2px;
       color: #ffffff;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        background-color: $hover-color;
+      }
     }
     .form-mobile {
       p {
@@ -180,10 +188,14 @@
         letter-spacing: 0.2px;
         color: #ffffff;
 
-        background: #23a6f0;
+        background: $primary;
         border-radius: 5px;
         border: none;
         padding: 15px 40px;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          background-color: $hover-color;
+        }
       }
     }
   }
