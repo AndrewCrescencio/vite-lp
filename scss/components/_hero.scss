@@ -12,27 +12,30 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     text-align: start;
   }
 
   .hero__content {
     padding: 80px 50px 7px;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       padding: 125px 50px;
     }
-    @media (min-width: 1440px) {
+
+    @media (width >= 1440px) {
       padding: 125px 195px 112px;
     }
   }
+
   h1 {
     margin-bottom: 40px;
-
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 57px;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       max-width: 599px;
       margin-bottom: 35px;
       font-weight: 800;
@@ -40,27 +43,33 @@
       line-height: 80px;
     }
   }
+
   h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+
     /* or 150% */
     letter-spacing: 0.2px;
     color: $light-text-color;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       max-width: 376px;
     }
   }
 
   .hero__buttons {
     margin: 40px auto 0;
-    @media (min-width: 769px) {
+
+    @media (width >= 769px) {
       margin: 35px auto 0;
     }
+
     button {
       cursor: pointer;
     }
+
     button:first-child {
       height: 42px;
       color: $white;
@@ -68,7 +77,6 @@
       border-radius: 37px;
       border: none;
       padding: 10px 36px;
-
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
@@ -77,26 +85,28 @@
       letter-spacing: 0.2px;
       margin-bottom: 35px;
       transition: background-color 200ms ease-in-out;
+
       &:hover {
         background-color: $hover-color;
       }
-      @media (min-width: 461px) {
+
+      @media (width >= 461px) {
         margin-right: 10px;
       }
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         padding: 15px 36px;
         height: 52px;
       }
     }
+
     button:nth-child(2) {
       width: 159px;
       height: 42px;
-      color: $primary;
       background-color: transparent;
       border: 1px solid $light-text-color;
       color: $light-text-color;
       border-radius: 37px;
-
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
@@ -104,11 +114,13 @@
       text-align: center;
       letter-spacing: 0.2px;
       transition: all 200ms ease-in-out;
+
       &:hover {
         background-color: $hover-color;
         border: 1px solid $hover-color;
       }
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         padding: 15px 36px;
         height: 52px;
       }

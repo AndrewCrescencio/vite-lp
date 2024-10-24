@@ -2,16 +2,18 @@
   color: $light-text-color;
   background-color: $blue-background-color;
   padding: 75px 20px 80px;
-  @media (min-width: 414px) {
+
+  @media (width >= 414px) {
     padding: 75px 42px 80px;
   }
+
   .container {
     max-width: 1440px !important;
     margin: 0 auto !important;
   }
+
   h2 {
     text-align: center;
-
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -20,9 +22,9 @@
     color: $light-text-color;
     margin-bottom: 10px;
   }
+
   p {
     text-align: center;
-
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -31,23 +33,28 @@
     color: $light-text-color;
     max-width: 308px;
     margin: 0 auto;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       max-width: 470px;
     }
   }
+
   .testimonial__cards {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 456px));
     justify-content: center;
     gap: 30px;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       gap: 54px;
       margin-top: 96px;
     }
-    @media (min-width: 1280px) {
+
+    @media (width >= 1280px) {
       gap: 113px;
     }
+
     .testimonial__card {
       position: relative;
       padding: 30px 40px;
@@ -55,13 +62,15 @@
 
       .testimonial__avatar {
         display: none;
+
         figure {
           img {
             width: 72px;
             height: 72px;
           }
         }
-        @media (min-width: 728px) {
+
+        @media (width >= 728px) {
           display: block;
           position: absolute;
           top: 28px;
@@ -77,6 +86,7 @@
         letter-spacing: 0.1px;
         color: $text-color;
       }
+
       p.testimonial-role {
         font-style: normal;
         font-weight: 600;
@@ -85,13 +95,14 @@
         letter-spacing: 0.2px;
         color: #737373;
       }
+
       .stars {
         margin: 15px 0;
       }
+
       p {
         text-align: start;
         color: $second-text-color;
-
         font-style: normal;
         font-weight: 500;
         font-size: 14px;

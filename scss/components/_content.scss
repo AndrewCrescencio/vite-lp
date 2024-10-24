@@ -4,7 +4,8 @@
 
   .container {
     padding: 0 17px;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       padding: 0;
     }
 
@@ -20,6 +21,7 @@
       letter-spacing: 0.2px;
       margin-bottom: 30px;
     }
+
     p {
       font-style: normal;
       font-weight: 500;
@@ -30,56 +32,69 @@
       margin: 0 auto;
       width: 100%;
       max-width: 262px;
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         max-width: 470px;
       }
     }
+
     .content__cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(auto, 331px));
       gap: 30px;
       margin-top: 60px;
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         margin-top: 96px;
       }
+
       justify-content: center;
+
       .card {
         width: 100%;
         height: 452px;
         position: relative;
-        box-shadow: inset 100vw 100vh rgba(0, 0, 0, 0.4);
+        box-shadow: inset 100vw 100vh rgb(0 0 0 / 40%);
         border: none;
         overflow: hidden;
+
         &:first-of-type {
           background-image: url("../assets/content-card-1.webp");
         }
+
         &:nth-child(2) {
           background-image: url("../assets/content-card-2.webp");
         }
+
         &:nth-child(3) {
           background-image: url("../assets/content-card-3.webp");
         }
+
         &:last-of-type {
           background-image: url("../assets/content-card-4.webp");
         }
+
         &__img {
           width: 100%;
           height: 100%;
           filter: grayscale(50%);
+
           img {
             width: 100%;
             height: 100%;
           }
         }
+
         &__body {
           position: absolute;
           bottom: 31px;
           left: 27px;
 
-          @media (min-width: 1280px) {
+          @media (width >= 1280px) {
             bottom: 18px;
             left: 20px;
           }
+
           p.card__title {
             text-align: start;
             font-style: normal;
@@ -88,6 +103,7 @@
             line-height: 24px;
             letter-spacing: 0.2px;
           }
+
           p.card__description {
             text-align: start;
             margin-top: 15px;
@@ -97,8 +113,9 @@
             line-height: 30px;
             letter-spacing: 0.2px;
             color: $light-text-color;
-            text-shadow: 0px 13px 19px rgba(0, 0, 0, 0.24);
+            text-shadow: 0 13px 19px rgb(0 0 0 / 24%);
           }
+
           button {
             margin-top: 15px;
             width: 165px;
@@ -110,6 +127,7 @@
             cursor: pointer;
             font-weight: 700;
             transition: all 200ms ease-in-out;
+
             &:hover {
               background-color: $hover-color;
             }

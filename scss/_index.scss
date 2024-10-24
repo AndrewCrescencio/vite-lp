@@ -7,14 +7,17 @@
 @import "./components/pricing";
 @import "./components/contact";
 @import "./components/footer";
+
 html {
-  /*navbar height*/
+  /* navbar height */
   scroll-padding-top: 91px;
 }
+
 body {
   background-color: $dark-background-color;
-  font-family: "Montserrat";
-  /*navbar height*/
+  font-family: Montserrat;
+
+  /* navbar height */
   .element-animate {
     opacity: 0;
     visibility: hidden;

@@ -1,18 +1,22 @@
 .features {
   color: $light-text-color;
   padding: 80px 0;
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     padding: 96px 0;
   }
+
   .container {
     max-width: 1440px !important;
     margin: 0 auto;
   }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 325px));
     justify-content: center;
     gap: 30px;
+
     .features__card {
       padding: 40px 0;
       display: flex;
@@ -29,9 +33,9 @@
         color: $light-text-color;
         margin-top: 30px;
       }
+
       p:last-of-type {
         max-width: 237px;
-
         font-style: normal;
         font-weight: 500;
         font-size: 14px;

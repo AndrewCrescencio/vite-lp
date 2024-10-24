@@ -6,34 +6,42 @@
   width: 100%;
   margin: 0 auto;
   transition: all 200ms ease-in-out;
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     background-color: transparent;
+
     &.scrolling {
       background-color: $dark-background-color;
+
       .navbar {
         padding-top: 8px;
         padding-bottom: 8px;
       }
     }
   }
+
   .navbar {
     max-width: 1322px;
     margin: 0 auto;
     color: $light-text-color;
     padding: 23px 35px;
     overflow: hidden;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding-top: 19px;
       padding-bottom: 20px;
     }
+
     &__header {
       width: 100%;
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         width: auto;
       }
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -44,32 +52,38 @@
         font-size: 24px;
         line-height: 32px;
         transition: color 200ms ease-in-out;
+
         &:hover {
           color: $hover-color;
         }
       }
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         .navbar__menu-btn {
           display: none;
         }
       }
     }
+
     ul.navbar__links.active {
       height: 100vh;
       display: block;
       visibility: visible;
       opacity: 1;
     }
+
     ul.navbar__links {
       margin: 83px auto 98px;
       display: none;
       text-align: center;
-      @media (min-width: 768px) {
+
+      @media (width >= 768px) {
         display: flex;
         margin: 0;
         align-items: center;
         gap: 21px;
       }
+
       li {
         font-style: normal;
         font-weight: 400;
@@ -77,10 +91,12 @@
         line-height: 45px;
         letter-spacing: 0.2px;
         margin-bottom: 30px;
+
         a {
           position: relative;
           color: $light-text-color;
           text-decoration: none;
+
           &::after {
             content: "";
             position: absolute;
@@ -90,7 +106,8 @@
             height: 2px;
             background: $light-text-color;
             transition: all 200ms ease-in-out;
-            @media (max-width: 768px) {
+
+            @media (width <= 768px) {
               top: 36px;
             }
           }
@@ -98,12 +115,14 @@
           &:hover::after {
             left: 0;
             width: 100%;
-            @media (max-width: 768px) {
+
+            @media (width <= 768px) {
               width: 100%;
             }
           }
         }
-        @media (min-width: 768px) {
+
+        @media (width >= 768px) {
           font-style: normal;
           font-weight: 600;
           font-size: 14px;

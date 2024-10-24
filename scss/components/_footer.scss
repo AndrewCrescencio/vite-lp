@@ -2,6 +2,7 @@ footer.footer {
   font-style: normal;
   background-color: $dark-background-color;
   color: $light-text-color;
+
   .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -10,19 +11,23 @@ footer.footer {
 
   .footer__links {
     padding: 50px 20vw;
-    @media (min-width: 540px) {
+
+    @media (width >= 540px) {
       padding: 50px;
       display: flex;
       flex-wrap: wrap;
       gap: 50px;
       justify-content: space-between;
     }
-    @media (min-width: 1440px) {
+
+    @media (width >= 1440px) {
       padding: 50px 195px;
       gap: 0;
     }
+
     ul {
       margin-bottom: 30px;
+
       h5 {
         font-weight: 700;
         font-size: 16px;
@@ -34,9 +39,9 @@ footer.footer {
 
       li {
         margin-bottom: 10px;
+
         a {
           color: $light-text-color;
-
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
@@ -44,10 +49,12 @@ footer.footer {
           letter-spacing: 0.2px;
         }
       }
+
       li:last-child {
         margin-bottom: 0;
       }
     }
+
     ul:last-child {
       li {
         display: flex;

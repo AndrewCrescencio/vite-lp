@@ -6,8 +6,10 @@
     margin: 0 auto;
     padding: 0;
   }
+
   background-color: #fff;
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     background-image: url("../assets/contact-background.webp");
     background-repeat: no-repeat;
     background-position: center center;
@@ -17,13 +19,16 @@
   .contact-desktop {
     display: none;
     padding: 90px 6vw 50px;
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       display: block;
     }
-    @media (min-width: 810px) {
+
+    @media (width >= 810px) {
       padding: 90px 8vw 50px;
     }
-    @media (min-width: 1440px) {
+
+    @media (width >= 1440px) {
       padding: 90px 195px 50px;
     }
 
@@ -34,6 +39,7 @@
       letter-spacing: 0.1px;
       color: $text-color;
     }
+
     h2 {
       font-weight: 700;
       font-size: 40px;
@@ -44,11 +50,13 @@
 
     form.contact-desktop__form.form {
       margin-top: 40px;
+
       .col-auto {
         max-width: 296px;
         width: 100%;
         padding: 0;
       }
+
       .col-auto:nth-child(2) {
         max-width: 285px !important;
       }
@@ -79,6 +87,7 @@
         margin-top: 40px;
         margin-bottom: 40px;
         transition: all 200ms ease-in-out;
+
         &:hover {
           background-color: $hover-color;
         }
@@ -93,6 +102,7 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
       input.form-control,
       select.custom-select {
         height: 50px;
@@ -102,12 +112,15 @@
 
   .contact-mobile {
     padding: 40px 30px 0;
+
     p {
       padding-right: 48px;
     }
-    @media (min-width: 768px) {
+
+    @media (width >= 768px) {
       display: none;
     }
+
     h3 {
       font-weight: 700;
       font-size: 24px;
@@ -116,6 +129,7 @@
       color: $text-color;
       margin-bottom: 10px;
     }
+
     p {
       font-weight: 500;
       font-size: 14px;
@@ -131,18 +145,19 @@
       background: $primary;
       border-radius: 5px;
       padding: 15px 40px;
-
       font-weight: 700;
       font-size: 14px;
       line-height: 22px;
       text-align: center;
       letter-spacing: 0.2px;
-      color: #ffffff;
+      color: #fff;
       transition: all 200ms ease-in-out;
+
       &:hover {
         background-color: $hover-color;
       }
     }
+
     .form-mobile {
       p {
         font-style: normal;
@@ -152,6 +167,7 @@
         letter-spacing: 0.1px;
         color: $text-color;
       }
+
       > * {
         padding-left: 0;
         padding-right: 0;
@@ -173,6 +189,7 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
       select.custom-select {
         background: #f9f9f9
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
@@ -180,19 +197,20 @@
         border: 1px solid #e6e6e6;
         border-radius: 5px;
       }
+
       .form-mobile__button {
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.2px;
-        color: #ffffff;
-
+        color: #fff;
         background: $primary;
         border-radius: 5px;
         border: none;
         padding: 15px 40px;
         transition: all 200ms ease-in-out;
+
         &:hover {
           background-color: $hover-color;
         }
