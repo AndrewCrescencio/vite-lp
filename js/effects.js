@@ -5,10 +5,6 @@ export default class Effects {
   contentWaypoint() {
     $(".element-animate").waypoint(
       function (direction) {
-        // console.log(direction);
-        // console.log(this);
-        // console.log(this.element);
-
         const $element = $(this.element);
         let effect = $element.data("animate-effect") || "fadeInLeft";
 
