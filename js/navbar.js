@@ -3,6 +3,7 @@ export default class Navbar {
   boot() {
     this.navbarToggle();
     this.navbarScrolling();
+    this.handleNavLinks();
   }
   navbarToggle() {
     const navbarBtn = document.getElementById("navbar-btn");
@@ -11,7 +12,7 @@ export default class Navbar {
 
     navbarBtn.addEventListener("click", () => {
       navbarLinks.classList.toggle("active");
-      hamburger.classList.toggle("hamburger-open");
+      hamburger.classList.toggle("active");
     });
   }
   navbarScrolling() {
@@ -27,5 +28,17 @@ export default class Navbar {
         }
       }
     };
+  }
+  handleNavLinks() {
+    const links = document.querySelectorAll('.navbar__links a');
+    const navbarLinks = document.getElementById("navbar-links");
+    const hamburger = document.getElementById("hamburger");
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    });
   }
 }
